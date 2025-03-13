@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://linklyposintegrations.github.io/pos.faq/', // Add your GitHub Pages URL here
-	base: '/pos.faq/', // Add this line to specify the base path for GitHub Pages
+	site: 'https://linklyposintegrations.github.io/posfaq/', // Add your GitHub Pages URL here
+	base: '/posfaq/', // Add this line to specify the base path for GitHub Pages
 	integrations: [
 		starlight({
 			title: 'POS FAQ',
