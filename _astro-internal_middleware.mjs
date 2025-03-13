@@ -1,6 +1,6 @@
 import { c as cookieExports } from './chunks/index_BYVHR9n5.mjs';
 import { A as AstroError, R as ResponseSentError, i as ForbiddenRewrite } from './chunks/astro/server_BhqBo4YN.mjs';
-import { u as useTranslations } from './chunks/translations_BYh0q8iw.mjs';
+import { u as useTranslations } from './chunks/translations_CQ4sgs2U.mjs';
 
 const DELETED_EXPIRATION = /* @__PURE__ */ new Date(0);
 const DELETED_VALUE = "deleted";

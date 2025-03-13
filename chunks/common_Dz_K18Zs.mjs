@@ -1,13 +1,13 @@
 import { g as AstroUserError, a as createAstro, b as createComponent, r as renderTemplate, s as maybeRenderHead, y as unescapeHTML, H as renderSlot, J as defineStyleVars, v as spreadAttributes, u as addAttribute, d as renderComponent, G as getDefaultExportFromCjs, K as renderScript, F as Fragment, O as renderHead } from './astro/server_BhqBo4YN.mjs';
-import { s as starlightConfig, B as BuiltInDefaultLocale, d as getCollection, a as getCollectionPathFromRoot, p as project, e as stripTrailingSlash, f as stripLeadingSlash, h as stripHtmlExtension, k as ensureHtmlExtension, l as ensureTrailingSlash, m as pickLang, n as stripLeadingAndTrailingSlashes, o as ensureLeadingSlash, q as stripExtension, r as DeprecatedLabelsPropProxy, u as useTranslations, t as objectType, v as stringType, w as enumType, x as unionType, y as recordType, z as arrayType, A as booleanType, C as undefinedType, E as renderEntry } from './translations_BYh0q8iw.mjs';
-import { p as printHref } from './index.37f97ed6_BUU43nNN.mjs';
+import { s as starlightConfig, B as BuiltInDefaultLocale, d as getCollection, a as getCollectionPathFromRoot, p as project, e as stripTrailingSlash, f as stripLeadingSlash, h as stripHtmlExtension, k as ensureHtmlExtension, l as ensureTrailingSlash, m as pickLang, n as stripLeadingAndTrailingSlashes, o as ensureLeadingSlash, q as stripExtension, r as DeprecatedLabelsPropProxy, u as useTranslations, t as objectType, v as stringType, w as enumType, x as unionType, y as recordType, z as arrayType, A as booleanType, C as undefinedType, E as renderEntry } from './translations_CQ4sgs2U.mjs';
+import { p as printHref } from './index.37f97ed6_Cj69t0e_.mjs';
 import minproc from 'node:process';
 import minpath from 'node:path';
 import { fileURLToPath } from 'node:url';
 import require$$1 from 'path';
 import require$$3 from 'url';
 import require$$0 from 'fs';
-import { $ as $$Image } from './_astro_assets_mqCcIBHL.mjs';
+import { $ as $$Image } from './_astro_assets_BpSIlu-G.mjs';
 
 function slugToLocale$1(slug, config) {
   const localesConfig = config.locales ?? {};
@@ -161,7 +161,7 @@ const makeAPI = (data) => {
 
 const api = makeAPI([["src/content/docs/guides/accreditationsupport.md",1741838732000],["src/content/docs/guides/apigeneral.md",1741838732000],["src/content/docs/guides/cloud.md",1741838732000],["src/content/docs/guides/downloads.md",1741838732000],["src/content/docs/guides/gettingstarted.md",1741838732000],["src/content/docs/guides/integrationsupport.md",1741838732000],["src/content/docs/guides/mpos.md",1741838732000],["src/content/docs/guides/onprem.md",1741838732000],["src/content/docs/guides/posfaq.md",1741838732000],["src/content/docs/index.mdx",1741838732000]]);const getNewestCommitDate = api.getNewestCommitDate;
 
-const base$1 = stripTrailingSlash("/");
+const base$1 = stripTrailingSlash("/pos.faq/");
 function pathWithBase(path) {
   path = stripLeadingSlash(path);
   return path ? base$1 + "/" + path : base$1 + "/";
@@ -30508,8 +30508,8 @@ async function getRenderer() {
   return await cachedRenderer;
 }
 async function createRenderer() {
-  const { astroConfig, ecConfigFileOptions, ecIntegrationOptions = {} } = await import('./config_DxVZI9NO.mjs');
-  const { createAstroRenderer, mergeEcConfigOptions } = await import('./index_CZAhgplR.mjs').then(n => n.i);
+  const { astroConfig, ecConfigFileOptions, ecIntegrationOptions = {} } = await import('./config_BIYO3dkP.mjs');
+  const { createAstroRenderer, mergeEcConfigOptions } = await import('./index_g6US4pur.mjs').then(n => n.i);
   const strIntegrationOptions = JSON.stringify(ecIntegrationOptions);
   if (strIntegrationOptions.includes('"[Function]"') || strIntegrationOptions.includes("'[Circular]'")) {
     throw new Error(
@@ -30521,7 +30521,7 @@ async function createRenderer() {
   }
   let mergedEcConfig = mergeEcConfigOptions(ecIntegrationOptions, ecConfigFileOptions);
   try {
-    const { default: preprocessEcConfig } = await import('./preprocess-config_MtzE3uuf.mjs');
+    const { default: preprocessEcConfig } = await import('./preprocess-config_ro5Ytoun.mjs');
     mergedEcConfig = await preprocessEcConfig({ ecConfig: mergedEcConfig, astroConfig }) || mergedEcConfig;
   } catch (error) {
     const msg = error instanceof Error ? error.message : error;
