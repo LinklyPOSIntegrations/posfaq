@@ -4890,7 +4890,7 @@ class ImmutableDataStore {
    */
   static async fromModule() {
     try {
-      const data = await import('./_astro_data-layer-content_CxfTiHtL.mjs');
+      const data = await import('./_astro_data-layer-content_w4rFUa_w.mjs');
       if (data.default instanceof Map) {
         return ImmutableDataStore.fromMap(data.default);
       }
@@ -4922,7 +4922,7 @@ function dataStoreSingleton() {
 }
 const globalDataStore = dataStoreSingleton();
 
-const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/pos.faq/", "DEV": false, "MODE": "production", "PROD": true, "SITE": "https://linklyposintegrations.github.io/pos.faq/", "SSR": true};
+const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/posfaq/", "DEV": false, "MODE": "production", "PROD": true, "SITE": "https://linklyposintegrations.github.io/posfaq/", "SSR": true};
 function createCollectionToGlobResultMap({
   globResult,
   contentDir
@@ -4953,7 +4953,7 @@ function createGetCollection({
     } else if (collection in dataCollectionToEntryMap) {
       type = "data";
     } else if (store.hasCollection(collection)) {
-      const { default: imageAssetMap } = await import('./content-assets_DidoSJZo.mjs');
+      const { default: imageAssetMap } = await import('./content-assets_B3s99EDc.mjs');
       const result = [];
       for (const rawEntry of store.values(collection)) {
         const data = updateImageReferencesInData(rawEntry.data, rawEntry.filePath, imageAssetMap);
@@ -5059,7 +5059,7 @@ function createGetEntry({
         console.warn(`Entry ${collection} → ${lookupId} was not found.`);
         return;
       }
-      const { default: imageAssetMap } = await import('./content-assets_DidoSJZo.mjs');
+      const { default: imageAssetMap } = await import('./content-assets_B3s99EDc.mjs');
       entry2.data = updateImageReferencesInData(entry2.data, entry2.filePath, imageAssetMap);
       if (entry2.legacyId) {
         return emulateLegacyEntry({ ...entry2, collection });
@@ -5105,9 +5105,9 @@ function createGetEntry({
 }
 const CONTENT_LAYER_IMAGE_REGEX = /__ASTRO_IMAGE_="([^"]+)"/g;
 async function updateImageReferencesInBody(html, fileName) {
-  const { default: imageAssetMap } = await import('./content-assets_DidoSJZo.mjs');
+  const { default: imageAssetMap } = await import('./content-assets_B3s99EDc.mjs');
   const imageObjects = /* @__PURE__ */ new Map();
-  const { getImage } = await import('./_astro_assets_BpSIlu-G.mjs').then(n => n._);
+  const { getImage } = await import('./_astro_assets_BqfWUjqo.mjs').then(n => n._);
   for (const [_full, imagePath] of html.matchAll(CONTENT_LAYER_IMAGE_REGEX)) {
     try {
       const decodedImagePath = JSON.parse(imagePath.replaceAll("&#x22;", '"'));

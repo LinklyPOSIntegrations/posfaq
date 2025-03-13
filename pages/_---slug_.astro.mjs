@@ -1,8 +1,8 @@
 import { a as createAstro, b as createComponent, r as renderTemplate, d as renderComponent } from '../chunks/astro/server_BhqBo4YN.mjs';
-import { $ as $$Common, p as paths } from '../chunks/common_Dz_K18Zs.mjs';
+import { $ as $$Common, p as paths } from '../chunks/common_CINXoX2i.mjs';
 export { renderers } from '../renderers.mjs';
 
-const $$Astro = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const prerender = true;
 async function getStaticPaths() {
   return paths;

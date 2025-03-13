@@ -1,6 +1,6 @@
-import { b as getCollectionPath, B as BuiltInDefaultLocale, s as starlightConfig, u as useTranslations } from './translations_CQ4sgs2U.mjs';
-import { E as ExpressiveCodeTheme, p as pluginFramesTexts } from './index_C4eBtAPH.mjs';
-import { s as slugToLocale, a as addClassName } from './common_Dz_K18Zs.mjs';
+import { b as getCollectionPath, B as BuiltInDefaultLocale, s as starlightConfig, u as useTranslations } from './translations_4DPnfGhj.mjs';
+import { E as ExpressiveCodeTheme, p as pluginFramesTexts } from './index_D057fYvm.mjs';
+import { s as slugToLocale, a as addClassName } from './common_CINXoX2i.mjs';
 
 function pathToLocale(path, {
   starlightConfig,

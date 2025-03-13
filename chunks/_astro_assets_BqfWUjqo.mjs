@@ -1,4 +1,4 @@
-import { i as isRemotePath, j as joinPaths, D as DEFAULT_OUTPUT_FORMAT, V as VALID_SUPPORTED_FORMATS, c as DEFAULT_HASH_PROPS } from './translations_CQ4sgs2U.mjs';
+import { i as isRemotePath, j as joinPaths, D as DEFAULT_OUTPUT_FORMAT, V as VALID_SUPPORTED_FORMATS, c as DEFAULT_HASH_PROPS } from './translations_4DPnfGhj.mjs';
 import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, j as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, k as UnsupportedImageConversion, l as NoImageMetadata, m as FailedToFetchRemoteImageDimensions, n as ExpectedImageOptions, o as ExpectedNotESMImage, p as InvalidImageService, t as toStyleString, a as createAstro, b as createComponent, q as ImageMissingAlt, r as renderTemplate, s as maybeRenderHead, u as addAttribute, v as spreadAttributes } from './astro/server_BhqBo4YN.mjs';
 
 const DEFAULT_RESOLUTIONS = [
@@ -342,7 +342,7 @@ const baseService = {
     Object.entries(params).forEach(([param, key]) => {
       options[key] && searchParams.append(param, options[key].toString());
     });
-    const imageEndpoint = joinPaths("/pos.faq/", imageConfig.endpoint.route);
+    const imageEndpoint = joinPaths("/posfaq/", imageConfig.endpoint.route);
     return `${imageEndpoint}?${searchParams}`;
   },
   parseURL(url) {
@@ -1220,7 +1220,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './sharp_DLX4KBIQ.mjs'
+      './sharp_BHHsV-SZ.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -1383,7 +1383,7 @@ function applyResponsiveAttributes({
   return attributes;
 }
 
-const $$Astro$1 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$1 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Image;
@@ -1861,7 +1861,7 @@ function lookup(extn) {
 	return mimes[!~idx ? tmp : tmp.substring(++idx)];
 }
 
-const $$Astro = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Picture;

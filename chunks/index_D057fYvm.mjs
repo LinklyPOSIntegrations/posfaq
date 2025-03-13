@@ -1,4 +1,4 @@
-import { r as requirePostcss, b as postcss, h, D as Declaration, a as addClassName$1, c as setInlineStyle$1 } from './common_Dz_K18Zs.mjs';
+import { r as requirePostcss, b as postcss, h, D as Declaration, a as addClassName$1, c as setInlineStyle$1 } from './common_CINXoX2i.mjs';
 import { D as requireCssesc, G as getDefaultExportFromCjs } from './astro/server_BhqBo4YN.mjs';
 import require$$0 from 'util';
 

@@ -1,4 +1,4 @@
-const __ASTRO_IMAGE_IMPORT_ZUR6XM = new Proxy({"src":"/pos.faq/_astro/Linkly.8bVXgX_x.jpg","width":298,"height":169,"format":"png"}, {
+const __ASTRO_IMAGE_IMPORT_ZUR6XM = new Proxy({"src":"/posfaq/_astro/Linkly.8bVXgX_x.jpg","width":298,"height":169,"format":"png"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);

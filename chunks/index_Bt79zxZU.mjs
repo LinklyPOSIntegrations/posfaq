@@ -1,5 +1,5 @@
-import { E as ExpressiveCodeTheme, I as InlineStyleAnnotation, g as getStableObjectHash, a as ExpressiveCodeEngine, b as pluginTextMarkers, c as pluginFrames, A as AnnotationRenderPhaseOrder, d as ExpressiveCodeAnnotation, e as ExpressiveCodeBlock, f as ExpressiveCodeLine, M as MetaOptions, P as PluginStyleSettings, h as PluginTexts, i as changeAlphaToReachColorContrast, j as changeLuminanceToReachColorContrast, k as chromaticRecolor, l as codeLineClass, m as darken, n as ensureColorContrastOnBackground, o as getCssVarName, q as getFirstStaticColor, r as getLuminance, s as getStaticBackgroundColor, t as isInlineStyleAnnotation, u as lighten, v as multiplyAlpha, w as onBackground, x as resolveStyleVariants, y as runHooks, z as setAlpha, B as setLuminance, C as stableStringify, D as toHexColor, F as validateExpressiveCodeAnnotation, L as LanguageGroups, G as LanguagesWithFencedFrontmatter, p as pluginFramesTexts } from './index_C4eBtAPH.mjs';
-import { t as toHtml } from './common_Dz_K18Zs.mjs';
+import { E as ExpressiveCodeTheme, I as InlineStyleAnnotation, g as getStableObjectHash, a as ExpressiveCodeEngine, b as pluginTextMarkers, c as pluginFrames, A as AnnotationRenderPhaseOrder, d as ExpressiveCodeAnnotation, e as ExpressiveCodeBlock, f as ExpressiveCodeLine, M as MetaOptions, P as PluginStyleSettings, h as PluginTexts, i as changeAlphaToReachColorContrast, j as changeLuminanceToReachColorContrast, k as chromaticRecolor, l as codeLineClass, m as darken, n as ensureColorContrastOnBackground, o as getCssVarName, q as getFirstStaticColor, r as getLuminance, s as getStaticBackgroundColor, t as isInlineStyleAnnotation, u as lighten, v as multiplyAlpha, w as onBackground, x as resolveStyleVariants, y as runHooks, z as setAlpha, B as setLuminance, C as stableStringify, D as toHexColor, F as validateExpressiveCodeAnnotation, L as LanguageGroups, G as LanguagesWithFencedFrontmatter, p as pluginFramesTexts } from './index_D057fYvm.mjs';
+import { t as toHtml } from './common_CINXoX2i.mjs';
 
 const bundledLanguagesInfo = [
   {
@@ -6815,7 +6815,7 @@ async function getCachedHighlighter(config = {}) {
 async function createRegexEngine(engine) {
   if (engine === "javascript")
     return [undefined][0];
-  return [(await import('./engine-oniguruma_DLxj7ppG.mjs')).createOnigurumaEngine(import('./wasm_CmTHlobv.mjs'))][0];
+  return [(await import('./engine-oniguruma_CgOgJWBK.mjs')).createOnigurumaEngine(import('./wasm_CmTHlobv.mjs'))][0];
 }
 async function ensureThemeIsLoaded(highlighter, theme, styleVariants) {
   let themeCacheKeys = themeCacheKeysByStyleVariants.get(styleVariants);

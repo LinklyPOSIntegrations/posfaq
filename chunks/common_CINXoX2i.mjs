@@ -1,13 +1,13 @@
 import { g as AstroUserError, a as createAstro, b as createComponent, r as renderTemplate, s as maybeRenderHead, y as unescapeHTML, H as renderSlot, J as defineStyleVars, v as spreadAttributes, u as addAttribute, d as renderComponent, G as getDefaultExportFromCjs, K as renderScript, F as Fragment, O as renderHead } from './astro/server_BhqBo4YN.mjs';
-import { s as starlightConfig, B as BuiltInDefaultLocale, d as getCollection, a as getCollectionPathFromRoot, p as project, e as stripTrailingSlash, f as stripLeadingSlash, h as stripHtmlExtension, k as ensureHtmlExtension, l as ensureTrailingSlash, m as pickLang, n as stripLeadingAndTrailingSlashes, o as ensureLeadingSlash, q as stripExtension, r as DeprecatedLabelsPropProxy, u as useTranslations, t as objectType, v as stringType, w as enumType, x as unionType, y as recordType, z as arrayType, A as booleanType, C as undefinedType, E as renderEntry } from './translations_CQ4sgs2U.mjs';
-import { p as printHref } from './index.37f97ed6_Cj69t0e_.mjs';
+import { s as starlightConfig, B as BuiltInDefaultLocale, d as getCollection, a as getCollectionPathFromRoot, p as project, e as stripTrailingSlash, f as stripLeadingSlash, h as stripHtmlExtension, k as ensureHtmlExtension, l as ensureTrailingSlash, m as pickLang, n as stripLeadingAndTrailingSlashes, o as ensureLeadingSlash, q as stripExtension, r as DeprecatedLabelsPropProxy, u as useTranslations, t as objectType, v as stringType, w as enumType, x as unionType, y as recordType, z as arrayType, A as booleanType, C as undefinedType, E as renderEntry } from './translations_4DPnfGhj.mjs';
+import { p as printHref } from './index.37f97ed6_BjQrSI7X.mjs';
 import minproc from 'node:process';
 import minpath from 'node:path';
 import { fileURLToPath } from 'node:url';
 import require$$1 from 'path';
 import require$$3 from 'url';
 import require$$0 from 'fs';
-import { $ as $$Image } from './_astro_assets_BpSIlu-G.mjs';
+import { $ as $$Image } from './_astro_assets_BqfWUjqo.mjs';
 
 function slugToLocale$1(slug, config) {
   const localesConfig = config.locales ?? {};
@@ -161,7 +161,7 @@ const makeAPI = (data) => {
 
 const api = makeAPI([["src/content/docs/guides/accreditationsupport.md",1741838732000],["src/content/docs/guides/apigeneral.md",1741838732000],["src/content/docs/guides/cloud.md",1741838732000],["src/content/docs/guides/downloads.md",1741838732000],["src/content/docs/guides/gettingstarted.md",1741838732000],["src/content/docs/guides/integrationsupport.md",1741838732000],["src/content/docs/guides/mpos.md",1741838732000],["src/content/docs/guides/onprem.md",1741838732000],["src/content/docs/guides/posfaq.md",1741838732000],["src/content/docs/index.mdx",1741838732000]]);const getNewestCommitDate = api.getNewestCommitDate;
 
-const base$1 = stripTrailingSlash("/pos.faq/");
+const base$1 = stripTrailingSlash("/posfaq/");
 function pathWithBase(path) {
   path = stripLeadingSlash(path);
   return path ? base$1 + "/" + path : base$1 + "/";
@@ -551,7 +551,7 @@ function getSiteTitleHref(locale) {
   return formatPath(locale || "/");
 }
 
-const $$Astro$H = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$H = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Banner = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$H, $$props, $$slots);
   Astro2.self = $$Banner;
@@ -1272,7 +1272,7 @@ const Icons = {
   ...FileIcons
 };
 
-const $$Astro$G = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$G = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Icon = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$G, $$props, $$slots);
   Astro2.self = $$Icon;
@@ -1282,7 +1282,7 @@ const $$Icon = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<svg${spreadAttributes(a11yAttrs)}${addAttribute((Astro2.props.class ?? "") + " astro-ch2wkzpk", "class")} width="16" height="16" viewBox="0 0 24 24" fill="currentColor"${addAttribute($$definedVars, "style")}>${unescapeHTML(Icons[name])}</svg> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/Icon.astro", undefined);
 
-const $$Astro$F = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$F = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$ContentNotice = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$F, $$props, $$slots);
   Astro2.self = $$ContentNotice;
@@ -1290,21 +1290,21 @@ const $$ContentNotice = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<p class="sl-flex astro-g5to6sij"> ${renderComponent($$result, "Icon", $$Icon, { "name": icon, "size": "1.5em", "color": "var(--sl-color-orange-high)", "class": "astro-g5to6sij" })} <span class="astro-g5to6sij">${label}</span> </p> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/ContentNotice.astro", undefined);
 
-const $$Astro$E = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$E = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$FallbackContentNotice = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$E, $$props, $$slots);
   Astro2.self = $$FallbackContentNotice;
   return renderTemplate`${renderComponent($$result, "ContentNotice", $$ContentNotice, { "icon": "warning", "label": Astro2.locals.t("i18n.untranslatedContent") })}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/FallbackContentNotice.astro", undefined);
 
-const $$Astro$D = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$D = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$DraftContentNotice = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$D, $$props, $$slots);
   Astro2.self = $$DraftContentNotice;
   return renderTemplate`${renderComponent($$result, "ContentNotice", $$ContentNotice, { "icon": "warning", "label": Astro2.locals.t("page.draft") })}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/DraftContentNotice.astro", undefined);
 
-const $$Astro$C = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$C = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$EditLink = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$C, $$props, $$slots);
   Astro2.self = $$EditLink;
@@ -1312,7 +1312,7 @@ const $$EditLink = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${editUrl && renderTemplate`${maybeRenderHead()}<a${addAttribute(editUrl, "href")} class="sl-flex print:hidden astro-kbkevfdh">${renderComponent($$result, "Icon", $$Icon, { "name": "pencil", "size": "1.2em", "class": "astro-kbkevfdh" })}${Astro2.locals.t("page.editLink")}</a>`}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/EditLink.astro", undefined);
 
-const $$Astro$B = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$B = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$LastUpdated = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$B, $$props, $$slots);
   Astro2.self = $$LastUpdated;
@@ -1320,7 +1320,7 @@ const $$LastUpdated = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${lastUpdated && renderTemplate`${maybeRenderHead()}<p>${Astro2.locals.t("page.lastUpdated")}${" "}<time${addAttribute(lastUpdated.toISOString(), "datetime")}>${lastUpdated.toLocaleDateString(lang, { dateStyle: "medium", timeZone: "UTC" })}</time></p>`}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/LastUpdated.astro", undefined);
 
-const $$Astro$A = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$A = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Pagination = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$A, $$props, $$slots);
   Astro2.self = $$Pagination;
@@ -1330,7 +1330,7 @@ const $$Pagination = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="pagination-links print:hidden astro-xdwarqfs"${addAttribute(dir, "dir")}> ${prev && renderTemplate`<a${addAttribute(prev.href, "href")} rel="prev" class="astro-xdwarqfs"> ${renderComponent($$result, "Icon", $$Icon, { "name": isRtl ? "right-arrow" : "left-arrow", "size": "1.5rem", "class": "astro-xdwarqfs" })} <span class="astro-xdwarqfs"> ${Astro2.locals.t("page.previousLink")} <br class="astro-xdwarqfs"> <span class="link-title astro-xdwarqfs">${prev.label}</span> </span> </a>`} ${next && renderTemplate`<a${addAttribute(next.href, "href")} rel="next" class="astro-xdwarqfs"> ${renderComponent($$result, "Icon", $$Icon, { "name": isRtl ? "left-arrow" : "right-arrow", "size": "1.5rem", "class": "astro-xdwarqfs" })} <span class="astro-xdwarqfs"> ${Astro2.locals.t("page.nextLink")} <br class="astro-xdwarqfs"> <span class="link-title astro-xdwarqfs">${next.label}</span> </span> </a>`} </div> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Pagination.astro", undefined);
 
-const $$Astro$z = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$z = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Aside = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$z, $$props, $$slots);
   Astro2.self = $$Aside;
@@ -1467,7 +1467,7 @@ const stringify$2 = (val) => JSON.stringify(val, null, 1).split(newlinePlusWhite
 const newlinePlusWhitespace = /\n\s*/;
 const leadingPeriod = /^\./;
 
-const $$Astro$y = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$y = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Badge = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$y, $$props, $$slots);
   Astro2.self = $$Badge;
@@ -1485,7 +1485,7 @@ const $$Badge = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<span${addAttribute([["sl-badge", variant, size, customClass], "astro-ifgtbdr5"], "class:list")}${spreadAttributes(attrs)}>${text}</span> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/Badge.astro", undefined);
 
-const $$Astro$x = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$x = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Card = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$x, $$props, $$slots);
   Astro2.self = $$Card;
@@ -1493,7 +1493,7 @@ const $$Card = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<article class="card sl-flex astro-lmhc35gk"> <p class="title sl-flex astro-lmhc35gk"> ${icon && renderTemplate`${renderComponent($$result, "Icon", $$Icon, { "name": icon, "class": "icon astro-lmhc35gk", "size": "1.333em" })}`} <span class="astro-lmhc35gk">${unescapeHTML(title)}</span> </p> <div class="body astro-lmhc35gk">${renderSlot($$result, $$slots["default"])}</div> </article> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/Card.astro", undefined);
 
-const $$Astro$w = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$w = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$CardGrid = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$w, $$props, $$slots);
   Astro2.self = $$CardGrid;
@@ -20862,7 +20862,7 @@ var __freeze$4 = Object.freeze;
 var __defProp$4 = Object.defineProperty;
 var __template$4 = (cooked, raw) => __freeze$4(__defProp$4(cooked, "raw", { value: __freeze$4(raw || cooked.slice()) }));
 var _a$4;
-const $$Astro$v = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$v = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Tabs = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$v, $$props, $$slots);
   Astro2.self = $$Tabs;
@@ -20934,7 +20934,7 @@ const $$Tabs = createComponent(async ($$result, $$props, $$slots) => {
 <\/script>`])))}${renderComponent($$result, "starlight-tabs", "starlight-tabs", { "data-sync-key": syncKey, "class": "astro-f7ddzdcf" }, { "default": () => renderTemplate` ${panels && renderTemplate`${maybeRenderHead()}<div class="tablist-wrapper not-content astro-f7ddzdcf"> <ul role="tablist" class="astro-f7ddzdcf"> ${panels.map(({ icon, label, panelId, tabId }, idx) => renderTemplate`<li role="presentation" class="tab astro-f7ddzdcf"> <a role="tab"${addAttribute("#" + panelId, "href")}${addAttribute(tabId, "id")}${addAttribute(idx === 0 ? "true" : "false", "aria-selected")}${addAttribute(idx !== 0 ? -1 : 0, "tabindex")} class="astro-f7ddzdcf"> ${icon && renderTemplate`${renderComponent($$result, "Icon", $$Icon, { "name": icon, "class": "astro-f7ddzdcf" })}`} ${label} </a> </li>`)} </ul> </div>`} ${renderComponent($$result, "Fragment", Fragment, {}, { "default": ($$result2) => renderTemplate`${unescapeHTML(html)}` })} ${isSynced && renderTemplate`${renderComponent($$result, "starlight-tabs-restore", "starlight-tabs-restore", { "class": "astro-f7ddzdcf" })}`} ` })}  ${renderScript($$result, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/Tabs.astro?astro&type=script&index=0&lang.ts")}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/Tabs.astro", undefined);
 
-const $$Astro$u = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$u = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$TabItem = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$u, $$props, $$slots);
   Astro2.self = $$TabItem;
@@ -20945,7 +20945,7 @@ const $$TabItem = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "TabItemTagname", TabItemTagname, { "data-label": label, "data-icon": icon }, { "default": ($$result2) => renderTemplate` ${renderSlot($$result2, $$slots["default"])} ` })}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/TabItem.astro", undefined);
 
-const $$Astro$t = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$t = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$LinkCard = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$t, $$props, $$slots);
   Astro2.self = $$LinkCard;
@@ -22042,7 +22042,7 @@ class StepsError extends AstroUserError {
   }
 }
 
-const $$Astro$s = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$s = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Steps = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$s, $$props, $$slots);
   Astro2.self = $$Steps;
@@ -22200,7 +22200,7 @@ function throwFileTreeValidationError(message) {
   );
 }
 
-const $$Astro$r = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$r = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$FileTree = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$r, $$props, $$slots);
   Astro2.self = $$FileTree;
@@ -22209,7 +22209,7 @@ const $$FileTree = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "starlight-file-tree", "starlight-file-tree", { "class": "not-content astro-u2ikpeib", "data-pagefind-ignore": true }, { "default": () => renderTemplate`${unescapeHTML(html)}` })} `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/user-components/FileTree.astro", undefined);
 
-const $$Astro$q = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$q = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$LinkButton = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$q, $$props, $$slots);
   Astro2.self = $$LinkButton;
@@ -30508,8 +30508,8 @@ async function getRenderer() {
   return await cachedRenderer;
 }
 async function createRenderer() {
-  const { astroConfig, ecConfigFileOptions, ecIntegrationOptions = {} } = await import('./config_BIYO3dkP.mjs');
-  const { createAstroRenderer, mergeEcConfigOptions } = await import('./index_g6US4pur.mjs').then(n => n.i);
+  const { astroConfig, ecConfigFileOptions, ecIntegrationOptions = {} } = await import('./config_BnqMvQwq.mjs');
+  const { createAstroRenderer, mergeEcConfigOptions } = await import('./index_Bt79zxZU.mjs').then(n => n.i);
   const strIntegrationOptions = JSON.stringify(ecIntegrationOptions);
   if (strIntegrationOptions.includes('"[Function]"') || strIntegrationOptions.includes("'[Circular]'")) {
     throw new Error(
@@ -30521,7 +30521,7 @@ async function createRenderer() {
   }
   let mergedEcConfig = mergeEcConfigOptions(ecIntegrationOptions, ecConfigFileOptions);
   try {
-    const { default: preprocessEcConfig } = await import('./preprocess-config_ro5Ytoun.mjs');
+    const { default: preprocessEcConfig } = await import('./preprocess-config_Czr2l10_.mjs');
     mergedEcConfig = await preprocessEcConfig({ ecConfig: mergedEcConfig, astroConfig }) || mergedEcConfig;
   } catch (error) {
     const msg = error instanceof Error ? error.message : error;
@@ -30540,7 +30540,7 @@ async function createRenderer() {
   };
 }
 
-const $$Astro$p = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$p = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Code = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$p, $$props, $$slots);
   Astro2.self = $$Code;
@@ -30613,7 +30613,7 @@ ${error.message}`, { cause: error });
   return renderTemplate`${renderComponent($$result, "Fragment", Fragment, {}, { "default": ($$result2) => renderTemplate`${unescapeHTML(html)}` })}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/astro-expressive-code@0.40._48dbfcf1532b010c0dc73469501f83f9/node_modules/astro-expressive-code/components/Code.astro", undefined);
 
-const $$Astro$o = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$o = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$o, $$props, $$slots);
   Astro2.self = $$Footer;
@@ -30694,7 +30694,7 @@ function getImportance(entry) {
   return 0;
 }
 
-const $$Astro$n = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$n = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Head = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$n, $$props, $$slots);
   Astro2.self = $$Head;
@@ -30764,14 +30764,14 @@ const $$Head = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${head.map(({ tag: Tag, attrs, content }) => renderTemplate`${renderComponent($$result, "Tag", Tag, { ...attrs }, { "default": ($$result2) => renderTemplate`${unescapeHTML(content)}` })}`)}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Head.astro", undefined);
 
-const $$Astro$m = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$m = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Select = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$m, $$props, $$slots);
   Astro2.self = $$Select;
   return renderTemplate`${maybeRenderHead()}<label${addAttribute(`--sl-select-width: ${Astro2.props.width}`, "style")} class="astro-kvqo2oew"> <span class="sr-only astro-kvqo2oew">${Astro2.props.label}</span> ${renderComponent($$result, "Icon", $$Icon, { "name": Astro2.props.icon, "class": "icon label-icon astro-kvqo2oew" })} <select${addAttribute(Astro2.props.value, "value")} autocomplete="off" class="astro-kvqo2oew"> ${Astro2.props.options.map(({ value, selected, label }) => renderTemplate`<option${addAttribute(value, "value")}${addAttribute(selected, "selected")} class="astro-kvqo2oew">${unescapeHTML(label)}</option>`)} </select> ${renderComponent($$result, "Icon", $$Icon, { "name": "down-caret", "class": "icon caret astro-kvqo2oew" })} </label> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Select.astro", undefined);
 
-const $$Astro$l = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$l = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$LanguageSelect = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$l, $$props, $$slots);
   Astro2.self = $$LanguageSelect;
@@ -30782,7 +30782,7 @@ var __freeze$3 = Object.freeze;
 var __defProp$3 = Object.defineProperty;
 var __template$3 = (cooked, raw) => __freeze$3(__defProp$3(cooked, "raw", { value: __freeze$3(cooked.slice()) }));
 var _a$3;
-const $$Astro$k = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$k = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Search = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$k, $$props, $$slots);
   Astro2.self = $$Search;
@@ -30796,7 +30796,7 @@ const $$Search = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate(_a$3 || (_a$3 = __template$3(["", "  <script>\n	(() => {\n		const openBtn = document.querySelector('button[data-open-modal]');\n		const shortcut = openBtn?.querySelector('kbd');\n		if (!openBtn || !(shortcut instanceof HTMLElement)) return;\n		const platformKey = shortcut.querySelector('kbd');\n		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {\n			platformKey.textContent = '⌘';\n			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');\n		}\n		shortcut.style.display = '';\n	})();\n</script> ", "  "])), renderComponent($$result, "site-search", "site-search", { "class": (Astro2.props.class ?? "") + " astro-qqu4dt5h", ...dataAttributes }, { "default": () => renderTemplate` ${maybeRenderHead()}<button data-open-modal disabled${addAttribute(Astro2.locals.t("search.label"), "aria-label")} aria-keyshortcuts="Control+K" class="astro-qqu4dt5h"> ${renderComponent($$result, "Icon", $$Icon, { "name": "magnifier", "class": "astro-qqu4dt5h" })} <span class="sl-hidden md:sl-block astro-qqu4dt5h" aria-hidden="true">${Astro2.locals.t("search.label")}</span> <kbd class="sl-hidden md:sl-flex astro-qqu4dt5h" style="display: none;"> <kbd class="astro-qqu4dt5h">${Astro2.locals.t("search.ctrlKey")}</kbd><kbd class="astro-qqu4dt5h">K</kbd> </kbd> </button> <dialog style="padding:0"${addAttribute(Astro2.locals.t("search.label"), "aria-label")} class="astro-qqu4dt5h"> <div class="dialog-frame sl-flex astro-qqu4dt5h">  <button data-close-modal class="sl-flex md:sl-hidden astro-qqu4dt5h"> ${Astro2.locals.t("search.cancelLabel")} </button> ${renderTemplate`<div class="search-container astro-qqu4dt5h"> <div id="starlight__search" class="astro-qqu4dt5h"></div> </div>`} </div> </dialog> ` }), renderScript($$result, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Search.astro?astro&type=script&index=0&lang.ts"));
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Search.astro", undefined);
 
-const $$Astro$j = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$j = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$SiteTitle = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$j, $$props, $$slots);
   Astro2.self = $$SiteTitle;
@@ -30813,7 +30813,7 @@ var __freeze$2 = Object.freeze;
 var __defProp$2 = Object.defineProperty;
 var __template$2 = (cooked, raw) => __freeze$2(__defProp$2(cooked, "raw", { value: __freeze$2(cooked.slice()) }));
 var _a$2;
-const $$Astro$i = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$i = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$ThemeSelect = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$i, $$props, $$slots);
   Astro2.self = $$ThemeSelect;
@@ -30824,7 +30824,7 @@ const $$ThemeSelect = createComponent(($$result, $$props, $$slots) => {
   ], "width": "6.25em" })} ` }), renderScript($$result, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/ThemeSelect.astro?astro&type=script&index=0&lang.ts"));
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/ThemeSelect.astro", undefined);
 
-const $$Astro$h = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$h = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Header = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$h, $$props, $$slots);
   Astro2.self = $$Header;
@@ -30832,7 +30832,7 @@ const $$Header = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="header sl-flex astro-qzl6p25x"> <div class="title-wrapper sl-flex astro-qzl6p25x"> ${renderComponent($$result, "SiteTitle", $$SiteTitle, { ...Astro2.props, "class": "astro-qzl6p25x" })} </div> <div class="sl-flex print:hidden astro-qzl6p25x"> ${shouldRenderSearch && renderTemplate`${renderComponent($$result, "Search", $$Search, { ...Astro2.props, "class": "astro-qzl6p25x" })}`} </div> <div class="sl-hidden md:sl-flex print:hidden right-group astro-qzl6p25x"> <div class="sl-flex social-icons astro-qzl6p25x"> ${renderComponent($$result, "SocialIcons", $$SocialIcons, { ...Astro2.props, "class": "astro-qzl6p25x" })} </div> ${renderComponent($$result, "ThemeSelect", $$ThemeSelect, { ...Astro2.props, "class": "astro-qzl6p25x" })} ${renderComponent($$result, "LanguageSelect", $$LanguageSelect, { ...Astro2.props, "class": "astro-qzl6p25x" })} </div> </div> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Header.astro", undefined);
 
-const $$Astro$g = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$g = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
   Astro2.self = $$Hero;
@@ -30867,14 +30867,14 @@ const $$MarkdownContent = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="sl-markdown-content">${renderSlot($$result, $$slots["default"])}</div>`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/MarkdownContent.astro", undefined);
 
-const $$Astro$f = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$f = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$MobileMenuToggle = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$MobileMenuToggle;
   return renderTemplate`${renderComponent($$result, "starlight-menu-button", "starlight-menu-button", { "class": "print:hidden astro-nwyoa2is" }, { "default": () => renderTemplate` ${maybeRenderHead()}<button aria-expanded="false"${addAttribute(Astro2.locals.t("menuButton.accessibleLabel"), "aria-label")} aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-nwyoa2is"> ${renderComponent($$result, "Icon", $$Icon, { "name": "bars", "class": "astro-nwyoa2is" })} </button> ` })} ${renderScript($$result, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/MobileMenuToggle.astro?astro&type=script&index=0&lang.ts")}  `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/MobileMenuToggle.astro", undefined);
 
-const $$Astro$e = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$e = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$PageFrame = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$PageFrame;
@@ -30882,7 +30882,7 @@ const $$PageFrame = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="page sl-flex astro-gmcpcq7u"> <header class="header astro-gmcpcq7u">${renderSlot($$result, $$slots["header"])}</header> ${hasSidebar && renderTemplate`<nav class="sidebar print:hidden astro-gmcpcq7u"${addAttribute(Astro2.locals.t("sidebarNav.accessibleLabel"), "aria-label")}> ${renderComponent($$result, "MobileMenuToggle", $$MobileMenuToggle, { ...Astro2.props, "class": "astro-gmcpcq7u" })} <div id="starlight__sidebar" class="sidebar-pane astro-gmcpcq7u"> <div class="sidebar-content sl-flex astro-gmcpcq7u"> ${renderSlot($$result, $$slots["sidebar"])} </div> </div> </nav>`} <div class="main-frame astro-gmcpcq7u">${renderSlot($$result, $$slots["default"])}</div> </div> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/PageFrame.astro", undefined);
 
-const $$Astro$d = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$d = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$TableOfContentsList = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$TableOfContentsList;
@@ -30891,7 +30891,7 @@ const $$TableOfContentsList = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<ul${addAttribute([{ isMobile }, "astro-3b6dkipn"], "class:list")}${addAttribute($$definedVars, "style")}> ${toc.map((heading) => renderTemplate`<li class="astro-3b6dkipn"${addAttribute($$definedVars, "style")}> <a${addAttribute("#" + heading.slug, "href")} class="astro-3b6dkipn"${addAttribute($$definedVars, "style")}> <span class="astro-3b6dkipn"${addAttribute($$definedVars, "style")}>${heading.text}</span> </a> ${heading.children.length > 0 && renderTemplate`${renderComponent($$result, "Astro.self", Astro2.self, { "toc": heading.children, "depth": depth + 1, "isMobile": isMobile, "class": "astro-3b6dkipn" })}`} </li>`)} </ul> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/TableOfContents/TableOfContentsList.astro", undefined);
 
-const $$Astro$c = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$c = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$MobileTableOfContents = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$MobileTableOfContents;
@@ -30899,7 +30899,7 @@ const $$MobileTableOfContents = createComponent(($$result, $$props, $$slots) => 
   return renderTemplate`${toc && renderTemplate`${renderComponent($$result, "mobile-starlight-toc", "mobile-starlight-toc", { "data-min-h": toc.minHeadingLevel, "data-max-h": toc.maxHeadingLevel, "class": "astro-ktrenrni" }, { "default": () => renderTemplate`${maybeRenderHead()}<nav aria-labelledby="starlight__on-this-page--mobile" class="astro-ktrenrni"><details id="starlight__mobile-toc" class="astro-ktrenrni"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-ktrenrni"><div class="toggle sl-flex astro-ktrenrni">${Astro2.locals.t("tableOfContents.onThisPage")}${renderComponent($$result, "Icon", $$Icon, { "name": "right-caret", "class": "caret astro-ktrenrni", "size": "1rem" })}</div><span class="display-current astro-ktrenrni"></span></summary><div class="dropdown astro-ktrenrni">${renderComponent($$result, "TableOfContentsList", $$TableOfContentsList, { "toc": toc.items, "isMobile": true, "class": "astro-ktrenrni" })}</div></details></nav>` })}`}${renderScript($$result, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/MobileTableOfContents.astro?astro&type=script&index=0&lang.ts")}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/MobileTableOfContents.astro", undefined);
 
-const $$Astro$b = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$b = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$TableOfContents = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$TableOfContents;
@@ -30907,21 +30907,21 @@ const $$TableOfContents = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${toc && renderTemplate`${renderComponent($$result, "starlight-toc", "starlight-toc", { "data-min-h": toc.minHeadingLevel, "data-max-h": toc.maxHeadingLevel }, { "default": () => renderTemplate`${maybeRenderHead()}<nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">${Astro2.locals.t("tableOfContents.onThisPage")}</h2>${renderComponent($$result, "TableOfContentsList", $$TableOfContentsList, { "toc": toc.items })}</nav>` })}`}${renderScript($$result, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/TableOfContents.astro?astro&type=script&index=0&lang.ts")}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/TableOfContents.astro", undefined);
 
-const $$Astro$a = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$a = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$PageSidebar = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$PageSidebar;
   return renderTemplate`${Astro2.props.toc && renderTemplate`${renderComponent($$result, "Fragment", Fragment, { "class": "astro-3yl3kt43" }, { "default": ($$result2) => renderTemplate`${maybeRenderHead()}<div class="lg:sl-hidden astro-3yl3kt43">${renderComponent($$result2, "MobileTableOfContents", $$MobileTableOfContents, { ...Astro2.props, "class": "astro-3yl3kt43" })}</div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-3yl3kt43"><div class="sl-container astro-3yl3kt43">${renderComponent($$result2, "TableOfContents", $$TableOfContents, { ...Astro2.props, "class": "astro-3yl3kt43" })}</div></div>` })}`}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/PageSidebar.astro", undefined);
 
-const $$Astro$9 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$9 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$PageTitle = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$PageTitle;
   return renderTemplate`${maybeRenderHead()}<h1${addAttribute(PAGE_TITLE_ID, "id")} class="astro-ylx43pno">${Astro2.props.entry.data.title}</h1> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/PageTitle.astro", undefined);
 
-const $$Astro$8 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$8 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$MobileMenuFooter = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$MobileMenuFooter;
@@ -30932,7 +30932,7 @@ var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
 var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(cooked.slice()) }));
 var _a$1;
-const $$Astro$7 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$7 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$SidebarPersister = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$SidebarPersister;
@@ -30970,7 +30970,7 @@ const $$SidebarPersister = createComponent(($$result, $$props, $$slots) => {
 	<\/script> `])), renderSlot($$result, $$slots["default"])) })} `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/SidebarPersister.astro", undefined);
 
-const $$Astro$6 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$6 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$SidebarRestorePoint = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$SidebarRestorePoint;
@@ -30981,7 +30981,7 @@ const $$SidebarRestorePoint = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "sl-sidebar-restore", "sl-sidebar-restore", { "data-index": index })}`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/SidebarRestorePoint.astro", undefined);
 
-const $$Astro$5 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$5 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$SidebarSublist = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$SidebarSublist;
@@ -30989,7 +30989,7 @@ const $$SidebarSublist = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<ul${addAttribute([{ "top-level": !nested }, "astro-l56fy43g"], "class:list")}> ${sublist.map((entry) => renderTemplate`<li class="astro-l56fy43g"> ${entry.type === "link" ? renderTemplate`<a${addAttribute(entry.href, "href")}${addAttribute(entry.isCurrent && "page", "aria-current")}${addAttribute([[{ large: !nested }, entry.attrs.class], "astro-l56fy43g"], "class:list")}${spreadAttributes(entry.attrs)}> <span class="astro-l56fy43g">${entry.label}</span> ${entry.badge && renderTemplate`${renderComponent($$result, "Badge", $$Badge, { "variant": entry.badge.variant, "class": (entry.badge.class ?? "") + " astro-l56fy43g", "text": entry.badge.text })}`} </a>` : renderTemplate`<details${addAttribute(flattenSidebar(entry.entries).some((i) => i.isCurrent) || !entry.collapsed, "open")} class="astro-l56fy43g"> ${renderComponent($$result, "SidebarRestorePoint", $$SidebarRestorePoint, { "class": "astro-l56fy43g" })} <summary class="astro-l56fy43g"> <div class="group-label astro-l56fy43g"> <span class="large astro-l56fy43g">${entry.label}</span> ${entry.badge && renderTemplate`${renderComponent($$result, "Badge", $$Badge, { "variant": entry.badge.variant, "class": (entry.badge.class ?? "") + " astro-l56fy43g", "text": entry.badge.text })}`} </div> ${renderComponent($$result, "Icon", $$Icon, { "name": "right-caret", "class": "caret astro-l56fy43g", "size": "1.25rem" })} </summary> ${renderComponent($$result, "Astro.self", Astro2.self, { "sublist": entry.entries, "nested": true, "class": "astro-l56fy43g" })} </details>`} </li>`)} </ul> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/SidebarSublist.astro", undefined);
 
-const $$Astro$4 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$4 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Sidebar = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Sidebar;
@@ -30997,7 +30997,7 @@ const $$Sidebar = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "SidebarPersister", $$SidebarPersister, { ...Astro2.props }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "SidebarSublist", $$SidebarSublist, { "sublist": sidebar })} ` })} ${maybeRenderHead()}<div class="md:sl-hidden"> ${renderComponent($$result, "MobileMenuFooter", $$MobileMenuFooter, { ...Astro2.props })} </div>`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Sidebar.astro", undefined);
 
-const $$Astro$3 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$3 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$SkipLink = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$SkipLink;
@@ -31012,14 +31012,14 @@ const $$ThemeProvider = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate(_a || (_a = __template(["<script>\n	window.StarlightThemeProvider = (() => {\n		const storedTheme =\n			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');\n		const theme =\n			storedTheme ||\n			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');\n		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';\n		return {\n			updatePickers(theme = storedTheme || 'auto') {\n				document.querySelectorAll('starlight-theme-select').forEach((picker) => {\n					const select = picker.querySelector('select');\n					if (select) select.value = theme;\n					/** @type {HTMLTemplateElement | null} */\n					const tmpl = document.querySelector(`#theme-icons`);\n					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);\n					if (newIcon) {\n						const oldIcon = picker.querySelector('svg.label-icon');\n						if (oldIcon) {\n							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);\n						}\n					}\n				});\n			},\n		};\n	})();\n<\/script><template id=\"theme-icons\">", "", "", "</template>"], ["<script>\n	window.StarlightThemeProvider = (() => {\n		const storedTheme =\n			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');\n		const theme =\n			storedTheme ||\n			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');\n		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';\n		return {\n			updatePickers(theme = storedTheme || 'auto') {\n				document.querySelectorAll('starlight-theme-select').forEach((picker) => {\n					const select = picker.querySelector('select');\n					if (select) select.value = theme;\n					/** @type {HTMLTemplateElement | null} */\n					const tmpl = document.querySelector(\\`#theme-icons\\`);\n					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);\n					if (newIcon) {\n						const oldIcon = picker.querySelector('svg.label-icon');\n						if (oldIcon) {\n							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);\n						}\n					}\n				});\n			},\n		};\n	})();\n<\/script><template id=\"theme-icons\">", "", "", "</template>"])), renderComponent($$result, "Icon", $$Icon, { "name": "sun", "class": "light" }), renderComponent($$result, "Icon", $$Icon, { "name": "moon", "class": "dark" }), renderComponent($$result, "Icon", $$Icon, { "name": "laptop", "class": "auto" }));
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/ThemeProvider.astro", undefined);
 
-const $$Astro$2 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$2 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$TwoColumnContent = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$TwoColumnContent;
   return renderTemplate`${maybeRenderHead()}<div class="lg:sl-flex astro-pbmaxmes"> ${Astro2.props.toc && renderTemplate`<aside class="right-sidebar-container print:hidden astro-pbmaxmes"> <div class="right-sidebar astro-pbmaxmes"> ${renderSlot($$result, $$slots["right-sidebar"])} </div> </aside>`} <div class="main-pane astro-pbmaxmes">${renderSlot($$result, $$slots["default"])}</div> </div> `;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/TwoColumnContent.astro", undefined);
 
-const $$Astro$1 = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro$1 = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Page = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Page;
@@ -31033,7 +31033,7 @@ const $$Page = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`<html${addAttribute(Astro2.props.lang, "lang")}${addAttribute(Astro2.props.dir, "dir")}${spreadAttributes(htmlDataAttributes, undefined, { "class": "astro-7bts2dqs" })}> <head>${renderComponent($$result, "Head", $$Head, { ...Astro2.props, "class": "astro-7bts2dqs" })}${renderComponent($$result, "ThemeProvider", $$ThemeProvider, { ...Astro2.props, "class": "astro-7bts2dqs" })}<link rel="stylesheet"${addAttribute(printHref, "href")} media="print">${renderHead()}</head> <body class="astro-7bts2dqs"> ${renderComponent($$result, "SkipLink", $$SkipLink, { ...Astro2.props, "class": "astro-7bts2dqs" })} ${renderComponent($$result, "PageFrame", $$PageFrame, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result2) => renderTemplate`  ${renderScript($$result2, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Page.astro?astro&type=script&index=0&lang.ts")} ${renderComponent($$result2, "TwoColumnContent", $$TwoColumnContent, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result3) => renderTemplate`  <main${spreadAttributes(mainDataAttributes, undefined, { "class": "astro-7bts2dqs" })}${addAttribute(Astro2.props.entryMeta.lang, "lang")}${addAttribute(Astro2.props.entryMeta.dir, "dir")}>  ${renderComponent($$result3, "Banner", $$Banner, { ...Astro2.props, "class": "astro-7bts2dqs" })} ${Astro2.props.entry.data.hero ? renderTemplate`${renderComponent($$result3, "ContentPanel", $$ContentPanel, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result4) => renderTemplate` ${renderComponent($$result4, "Hero", $$Hero, { ...Astro2.props, "class": "astro-7bts2dqs" })} ${renderComponent($$result4, "MarkdownContent", $$MarkdownContent, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result5) => renderTemplate` ${renderSlot($$result5, $$slots["default"])} ` })} ${renderComponent($$result4, "Footer", $$Footer, { ...Astro2.props, "class": "astro-7bts2dqs" })} ` })}` : renderTemplate`${renderComponent($$result3, "Fragment", Fragment, { "class": "astro-7bts2dqs" }, { "default": ($$result4) => renderTemplate` ${renderComponent($$result4, "ContentPanel", $$ContentPanel, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result5) => renderTemplate` ${renderComponent($$result5, "PageTitle", $$PageTitle, { ...Astro2.props, "class": "astro-7bts2dqs" })} ${Astro2.props.entry.data.draft && renderTemplate`${renderComponent($$result5, "DraftContentNotice", $$DraftContentNotice, { ...Astro2.props, "class": "astro-7bts2dqs" })}`}${Astro2.props.isFallback && renderTemplate`${renderComponent($$result5, "FallbackContentNotice", $$FallbackContentNotice, { ...Astro2.props, "class": "astro-7bts2dqs" })}`}` })} ${renderComponent($$result4, "ContentPanel", $$ContentPanel, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result5) => renderTemplate` ${renderComponent($$result5, "MarkdownContent", $$MarkdownContent, { ...Astro2.props, "class": "astro-7bts2dqs" }, { "default": ($$result6) => renderTemplate` ${renderSlot($$result6, $$slots["default"])} ` })} ${renderComponent($$result5, "Footer", $$Footer, { ...Astro2.props, "class": "astro-7bts2dqs" })} ` })} ` })}`} </main> `, "right-sidebar": ($$result3) => renderTemplate`${renderComponent($$result3, "PageSidebar", $$PageSidebar, { "slot": "right-sidebar", ...Astro2.props, "class": "astro-7bts2dqs" })}` })} `, "header": ($$result2) => renderTemplate`${renderComponent($$result2, "Header", $$Header, { "slot": "header", ...Astro2.props, "class": "astro-7bts2dqs" })}`, "sidebar": ($$result2) => renderTemplate`${Astro2.props.hasSidebar && renderTemplate`${renderComponent($$result2, "Sidebar", $$Sidebar, { "slot": "sidebar", ...Astro2.props, "class": "astro-7bts2dqs" })}`}` })} </body></html>`;
 }, "C:/Users/Lakshan.Perera/dev/faq/node_modules/.pnpm/@astrojs+starlight@0.31.1_a_939efdf0f4785c67f0f6a50b88f22789/node_modules/@astrojs/starlight/components/Page.astro", undefined);
 
-const $$Astro = createAstro("https://linklyposintegrations.github.io/pos.faq/");
+const $$Astro = createAstro("https://linklyposintegrations.github.io/posfaq/");
 const $$Common = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Common;

@@ -1,4 +1,4 @@
-const astroConfig = {"base":"/pos.faq/","root":"file:///C:/Users/Lakshan.Perera/dev/faq/","srcDir":"file:///C:/Users/Lakshan.Perera/dev/faq/src/","build":{"assets":"_astro"},"markdown":{"shikiConfig":{"langs":[]}}};
+const astroConfig = {"base":"/posfaq/","root":"file:///C:/Users/Lakshan.Perera/dev/faq/","srcDir":"file:///C:/Users/Lakshan.Perera/dev/faq/src/","build":{"assets":"_astro"},"markdown":{"shikiConfig":{"langs":[]}}};
 const ecIntegrationOptions = {};
 let ecConfigFileOptions = {};
 try {
