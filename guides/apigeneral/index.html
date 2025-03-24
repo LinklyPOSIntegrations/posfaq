@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-3wtokpny"> <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>API Overview | POS FAQ</title><link rel="canonical"/><link rel="shortcut icon" href="/posfaq/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v5.5.4"/><meta name="generator" content="Starlight v0.31.1"/><meta property="og:title" content="API Overview"/><meta property="og:type" content="article"/><meta property="og:url"/><meta property="og:locale" content="en"/><meta property="og:description" content="General questions about Linkly APIs"/><meta property="og:site_name" content="POS FAQ"/><meta name="twitter:card" content="summary_large_image"/><meta name="description" content="General questions about Linkly APIs"/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg> <svg aria-hidden="true" class="dark astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg> <svg aria-hidden="true" class="auto astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> </template><link rel="stylesheet" href="/posfaq/_astro/print.BJ0teN4y.css" media="print"><link rel="stylesheet" href="/posfaq/_astro/index.CN272jfk.css"><script type="module" src="/posfaq/_astro/page.7qqag-5g.js"></script></head> <body class="astro-3wtokpny"> <a href="#_top" class="astro-r3hq4u2x">Skip to content</a>  <div class="page sl-flex astro-s2wef77y"> <header class="header astro-s2wef77y"><div class="header sl-flex astro-ffnhmhof"> <div class="title-wrapper sl-flex astro-ffnhmhof"> <a href="/posfaq/" class="site-title sl-flex astro-2oai4oqv">  <span class="astro-2oai4oqv" translate="no"> POS FAQ </span> </a>  </div> <div class="sl-flex print:hidden astro-ffnhmhof"> <site-search class="astro-ffnhmhof astro-fdix3kou" data-translations="{&#34;placeholder&#34;:&#34;Search&#34;}"> <button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-fdix3kou"> <svg aria-hidden="true" class="astro-fdix3kou astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg>  <span class="sl-hidden md:sl-block astro-fdix3kou" aria-hidden="true">Search</span> <kbd class="sl-hidden md:sl-flex astro-fdix3kou" style="display: none;"> <kbd class="astro-fdix3kou">Ctrl</kbd><kbd class="astro-fdix3kou">K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" class="astro-fdix3kou"> <div class="dialog-frame sl-flex astro-fdix3kou">  <button data-close-modal class="sl-flex md:sl-hidden astro-fdix3kou"> Cancel </button> <div class="search-container astro-fdix3kou"> <div id="starlight__search" class="astro-fdix3kou"></div> </div> </div> </dialog> </site-search>  <script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script> <script type="module" src="/posfaq/_astro/Search.astro_astro_type_script_index_0_lang.BoxV2GVu.js"></script>   </div> <div class="sl-hidden md:sl-flex print:hidden right-group astro-ffnhmhof"> <div class="sl-flex social-icons astro-ffnhmhof">  </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-pkhvc53l"> <span class="sr-only astro-pkhvc53l">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-pkhvc53l astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" autocomplete="off" class="astro-pkhvc53l"> <option value="dark" class="astro-pkhvc53l">Dark</option><option value="light" class="astro-pkhvc53l">Light</option><option value="auto" selected class="astro-pkhvc53l">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-pkhvc53l astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script> <script type="module">const r="starlight-theme",o=e=>e==="auto"||e==="dark"||e==="light"?e:"auto",c=()=>o(typeof localStorage<"u"&&localStorage.getItem(r));function n(e){typeof localStorage<"u"&&localStorage.setItem(r,e==="light"||e==="dark"?e:"")}const l=()=>matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";function t(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e==="auto"?l():e,n(e)}matchMedia("(prefers-color-scheme: light)").addEventListener("change",()=>{c()==="auto"&&t("auto")});class s extends HTMLElement{constructor(){super(),t(c()),this.querySelector("select")?.addEventListener("change",a=>{a.currentTarget instanceof HTMLSelectElement&&t(o(a.currentTarget.value))})}}customElements.define("starlight-theme-select",s);</script> <script type="module">class s extends HTMLElement{constructor(){super();const e=this.querySelector("select");e&&(e.addEventListener("change",t=>{t.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=t.currentTarget.value)}),window.addEventListener("pageshow",t=>{if(!t.persisted)return;const n=e.querySelector("option[selected]")?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}}customElements.define("starlight-lang-select",s);</script> </div> </div> </header> <nav class="sidebar print:hidden astro-s2wef77y" aria-label="Main"> <starlight-menu-button class="print:hidden astro-en7yh2gj"> <button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-en7yh2gj"> <svg aria-hidden="true" class="astro-en7yh2gj astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg>  </button> </starlight-menu-button> <script type="module">class s extends HTMLElement{constructor(){super(),this.btn=this.querySelector("button"),this.btn.addEventListener("click",()=>this.toggleExpanded());const t=this.closest("nav");t&&t.addEventListener("keyup",e=>this.closeOnEscape(e))}setExpanded(t){this.setAttribute("aria-expanded",String(t)),document.body.toggleAttribute("data-mobile-menu-expanded",t)}toggleExpanded(){this.setExpanded(this.getAttribute("aria-expanded")!=="true")}closeOnEscape(t){t.code==="Escape"&&(this.setExpanded(!1),this.btn.focus())}}customElements.define("starlight-menu-button",s);</script>   <div id="starlight__sidebar" class="sidebar-pane astro-s2wef77y"> <div class="sidebar-content sl-flex astro-s2wef77y"> <sl-sidebar-state-persist data-hash="1woq07c" class="astro-nn5qoni3"> <script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script>  <ul class="top-level astro-u3gz75ti"> <li class="astro-u3gz75ti"> <details open class="astro-u3gz75ti"> <sl-sidebar-restore data-index="0"></sl-sidebar-restore> <summary class="astro-u3gz75ti"> <div class="group-label astro-u3gz75ti"> <span class="large astro-u3gz75ti">FAQs</span>  </div> <svg aria-hidden="true" class="caret astro-u3gz75ti astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-u3gz75ti"> <li class="astro-u3gz75ti"> <a href="/posfaq/guides/gettingstarted" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">Getting Started</span>  </a> </li><li class="astro-u3gz75ti"> <a href="/posfaq/guides/apigeneral" aria-current="page" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">API Overview</span>  </a> </li><li class="astro-u3gz75ti"> <a href="/posfaq/guides/onprem" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">OnPrem TCPIP/ActiveX</span>  </a> </li><li class="astro-u3gz75ti"> <a href="/posfaq/guides/cloud" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">Cloud</span>  </a> </li><li class="astro-u3gz75ti"> <a href="/posfaq/guides/mpos" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">MPOS</span>  </a> </li><li class="astro-u3gz75ti"> <a href="/posfaq/guides/integrationsupport" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">Integration support</span>  </a> </li><li class="astro-u3gz75ti"> <a href="/posfaq/guides/accreditationsupport" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">Accreditation support</span>  </a> </li> </ul>  </details> </li><li class="astro-u3gz75ti"> <details open class="astro-u3gz75ti"> <sl-sidebar-restore data-index="1"></sl-sidebar-restore> <summary class="astro-u3gz75ti"> <div class="group-label astro-u3gz75ti"> <span class="large astro-u3gz75ti">Quick Actions</span>  </div> <svg aria-hidden="true" class="caret astro-u3gz75ti astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-u3gz75ti"> <li class="astro-u3gz75ti"> <a href="/posfaq/guides/downloads" aria-current="false" class="astro-u3gz75ti"> <span class="astro-u3gz75ti">Links &amp; Downloads</span>  </a> </li> </ul>  </details> </li> </ul>   <script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-pww5za44"> <div class="sl-flex social-icons astro-pww5za44">  </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-pkhvc53l"> <span class="sr-only astro-pkhvc53l">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-pkhvc53l astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" autocomplete="off" class="astro-pkhvc53l"> <option value="dark" class="astro-pkhvc53l">Dark</option><option value="light" class="astro-pkhvc53l">Light</option><option value="auto" selected class="astro-pkhvc53l">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-pkhvc53l astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-s2wef77y">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-jfpoekvn"> <aside class="right-sidebar-container print:hidden astro-jfpoekvn"> <div class="right-sidebar astro-jfpoekvn"> <div class="lg:sl-hidden astro-npyzp34p"><mobile-starlight-toc data-min-h="1" data-max-h="6" class="astro-gigdmobl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-gigdmobl"><details id="starlight__mobile-toc" class="astro-gigdmobl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-gigdmobl"><div class="toggle sl-flex astro-gigdmobl">On this page<svg aria-hidden="true" class="caret astro-gigdmobl astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </div><span class="display-current astro-gigdmobl"></span></summary><div class="dropdown astro-gigdmobl"><ul class="isMobile astro-hqqzyjjc" style="--depth: 0;"> <li class="astro-hqqzyjjc" style="--depth: 0;"> <a href="#_top" class="astro-hqqzyjjc" style="--depth: 0;"> <span class="astro-hqqzyjjc" style="--depth: 0;">Overview</span> </a> <ul class="isMobile astro-hqqzyjjc" style="--depth: 1;"> <li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#are-all-features-supported-in-all-different-integration-types" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Are all features supported in all different integration types?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#which-of-the-integration-types-are-platform-dependent" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Which of the integration types are platform-dependent?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#are-cross-platform-integrations-possible-provide-examples-solutions" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Are cross-platform integrations possible? Provide examples, solutions?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#do-we-need-test-credentials" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Do we need test credentials?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#are-there-any-sdks-we-can-use-with-our-preferred-integration-type" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Are there any SDKs we can use with our preferred integration type?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#why-should-we-use-the-sdk" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Why should we use the SDK?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#what-error-management-and-recovery-options-are-available" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">What error management and recovery options are available?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#common-merchant-use-case-scenarios-and-best-practices" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Common Merchant Use Case Scenarios and Best Practices</span> </a>  </li> </ul>  </li> </ul> </div></details></nav></mobile-starlight-toc><script type="module" src="/posfaq/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-npyzp34p"><div class="sl-container astro-npyzp34p"><starlight-toc data-min-h="1" data-max-h="6"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-hqqzyjjc" style="--depth: 0;"> <li class="astro-hqqzyjjc" style="--depth: 0;"> <a href="#_top" class="astro-hqqzyjjc" style="--depth: 0;"> <span class="astro-hqqzyjjc" style="--depth: 0;">Overview</span> </a> <ul class="astro-hqqzyjjc" style="--depth: 1;"> <li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#are-all-features-supported-in-all-different-integration-types" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Are all features supported in all different integration types?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#which-of-the-integration-types-are-platform-dependent" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Which of the integration types are platform-dependent?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#are-cross-platform-integrations-possible-provide-examples-solutions" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Are cross-platform integrations possible? Provide examples, solutions?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#do-we-need-test-credentials" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Do we need test credentials?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#are-there-any-sdks-we-can-use-with-our-preferred-integration-type" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Are there any SDKs we can use with our preferred integration type?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#why-should-we-use-the-sdk" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Why should we use the SDK?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#what-error-management-and-recovery-options-are-available" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">What error management and recovery options are available?</span> </a>  </li><li class="astro-hqqzyjjc" style="--depth: 1;"> <a href="#common-merchant-use-case-scenarios-and-best-practices" class="astro-hqqzyjjc" style="--depth: 1;"> <span class="astro-hqqzyjjc" style="--depth: 1;">Common Merchant Use Case Scenarios and Best Practices</span> </a>  </li> </ul>  </li> </ul> </nav></starlight-toc><script type="module" src="/posfaq/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script></div></div> </div> </aside> <div class="main-pane astro-jfpoekvn">  <main data-pagefind-body class="astro-3wtokpny" lang="en" dir="ltr">    <div class="content-panel astro-ss7nripe"> <div class="sl-container astro-ss7nripe"> <h1 id="_top" class="astro-q7l424kn">API Overview</h1>  </div> </div>  <div class="content-panel astro-ss7nripe"> <div class="sl-container astro-ss7nripe"> <div class="sl-markdown-content"> <h3 id="are-all-features-supported-in-all-different-integration-types">Are all features supported in all different integration types?</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><strong>Features</strong></th><th><strong>ActiveX</strong></th><th><strong>TCPIP</strong></th><th><strong>Cloud (Async)</strong></th><th><strong>Cloud (Sync)</strong></th><th><strong>MPOS</strong></th></tr></thead><tbody><tr><td><strong>Core Payments</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><strong>Cashout</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><strong>Tipping</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><strong>Surcharging</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><strong>VAS</strong></td><td>Y</td><td>Y</td><td>N</td><td>N</td><td>Y</td></tr><tr><td><strong>PLB</strong></td><td>Y</td><td>Y</td><td>N</td><td>N</td><td>N</td></tr><tr><td><strong>FnB</strong></td><td>Y</td><td>Y</td><td>N</td><td>N</td><td>N</td></tr><tr><td><strong>Partial/Split Payments</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>N</td></tr><tr><td><strong>MOTO</strong></td><td>Y</td><td>Y</td><td>Y</td><td>N</td><td>N</td></tr><tr><td><strong>Settlement</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><strong>Reprint Receipts</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><strong>Get Last Transactions</strong></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr></tbody></table>
+<h3 id="which-of-the-integration-types-are-platform-dependent">Which of the integration types are platform-dependent?</h3>
+<p><strong>OnPrem (ActiveX and TCPIP)</strong>
+Pros:</p>
+<ul>
+<li>Low Latency: Direct communication with local hardware/software ensures faster response times.</li>
+<li>Offline Capability: Suitable for environments where consistent internet connectivity is unavailable.</li>
+<li>Established Technology: Widely used and well-documented for Windows systems.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Platform Dependency: Restricted to Windows environments, limiting flexibility for businesses using other operating systems.</li>
+</ul>
+<p><strong>Cloud</strong>
+Pros:</p>
+<ul>
+<li>Platform-Agnostic: Works across multiple operating systems, including Windows, macOS, Linux, and mobile platforms.</li>
+<li>Ease of Maintenance: Centralized updates and management reduce local maintenance efforts.</li>
+<li>Accessibility: Accessible from anywhere with an internet connection.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Internet Dependency: Requires stable internet connectivity for optimal performance.</li>
+<li>Latency Risks: May experience delays in processing transactions due to network issues.</li>
+</ul>
+<p><strong>MPOS</strong>
+Pros:</p>
+<ul>
+<li>Mobile-Friendly: Ideal for businesses requiring mobility.</li>
+<li>Lightweight Deployment: Easy to set up on compatible Android devices.</li>
+<li>Cost-Effective: Reduces the need for heavy hardware investments.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Device Dependency: Relies on specific hardware, which may not align with all business needs.</li>
+</ul>
+<h3 id="are-cross-platform-integrations-possible-provide-examples-solutions">Are cross-platform integrations possible? Provide examples, solutions?</h3>
+<p>Yes, cross-platform integrations are possible. For example:</p>
+<p>A <strong>Cloud POS</strong> can communicate with <strong>OnPrem software</strong> for offline redundancy. The POS may need to build logic to communicate between the Cloud POS and the Linkly Software. The POS can communicate with the Linkly Client either by:</p>
+<p>Sending a TCPIP string directly:</p>
+<ul>
+<li>The POS software must be able to open a socket to the Linkly Client software installed on the POS computer.</li>
+<li>The POS must convert its JSON request object into a TCPIP string, ensuring that all fields are mapped correctly. The message format is explained in the TCPIP API Specification. (Provide URL)</li>
+<li>Once a socket is established:</li>
+<li>The POS can push a transaction request to the Linkly Client and listen for any incoming messages.</li>
+<li>The Linkly software will send terminal events to the POS, which should be displayed to the merchant.</li>
+<li>Once the transaction is finalised:
+<ul>
+<li>The Linkly Client will send a final transaction response, which the POS must acknowledge and then close the socket.</li>
+<li>The POS can then proceed with receipting and finalizing the sale.</li>
+</ul>
+</li>
+</ul>
+<p>Utilizing Linkly’s OnPrem C# SDK:</p>
+<ul>
+<li>The POS software must invoke methods in the SDK installed locally on the POS computer.</li>
+<li>This requires the POS vendor to build a handler to pass transaction details from the POS to the SDK.</li>
+<li>The SDK will manage the transaction with the Linkly software and send terminal events back to the POS.</li>
+<li>Once the transaction is finalised:
+<ul>
+<li>The Linkly Client will send a final transaction response, which the POS can use to update the transaction record.</li>
+<li>The POS can then proceed with receipting and finalizing the sale.</li>
+</ul>
+</li>
+</ul>
+<h3 id="do-we-need-test-credentials">Do we need test credentials?</h3>
+<ul>
+<li>Test Credentials are only required for cloud integrations. These can be requested through <a href="mailto:POSIntegrations@linkly.com.au">POSIntegrations@linkly.com.au</a>.</li>
+</ul>
+<h3 id="are-there-any-sdks-we-can-use-with-our-preferred-integration-type">Are there any SDKs we can use with our preferred integration type?</h3>
+<p>SDKs are available for OnPrem integrations to simplify development and sensure compliance. We currently provide 2 versions:</p>
+<ul>
+<li><a href="https://github.com/LinklyCo/EFTClient.IPInterface.CSharp">C# SDK</a> - Ideal for Windows and Cloud based POS integrations.</li>
+<li><a href="https://github.com/LinklyCo/EFTClient.IPInterface.Java">JAVA SDK</a> - Ideal for Windows, Cloud and Android (via Android Runtime) based POS integrations.</li>
+</ul>
+<h3 id="why-should-we-use-the-sdk">Why should we use the SDK?</h3>
+<p>The SDK provides a simple module to be integrated with for the POS, this abstracts the complexity away from the POS Software and allows for a simple supportable solution that will be familiar to any user of the Linkly integrated software.</p>
+<h3 id="what-error-management-and-recovery-options-are-available">What error management and recovery options are available?</h3>
+<p>Linkly provides comprehensive error management and recovery options across its different integration types, ensuring seamless operation and customer satisfaction during unexpected scenarios. Please refer to the integration types avaialble within the FAQ for more detials.</p>
+<p><strong>Linkly OnPrem</strong></p>
+<ul>
+<li>
+<p><strong>Get Last Transaction (For OnPrem)</strong>
+The <strong>Get Last Transaction</strong> feature allows the Point of Sale (POS) system to retrieve details of the most recent transaction processed by the terminal. This functionality is essential for scenarios such as error recovery, troubleshooting, or addressing customer queries. By enabling quick access to transaction details, it minimizes disruption and supports efficient resolution.</p>
+</li>
+<li>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Confirming the status of the last transaction after a system error.</li>
+<li>Validating transaction outcomes during customer disputes.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Socket Management</strong>
+Effective TCP/IP socket management ensures smooth communication between the POS system and Linkly Client Software. Proper handling of sockets is critical for maintaining reliable data exchange during transactions.</p>
+<p><strong>Socket Establishment</strong>:</p>
+<ul>
+<li>A socket connection is initiated between the POS and the Linkly Client Software.</li>
+<li>This connection enables bidirectional communication for sending commands (e.g., transaction requests) and receiving responses.</li>
+</ul>
+<p><strong>Data Transmission</strong>:</p>
+<ul>
+<li>Real-time data packets are securely exchanged over the socket, ensuring seamless payment processing.</li>
+</ul>
+<p><strong>Socket Closure</strong>:</p>
+<ul>
+<li>After completing a transaction or communication, the socket is closed to free up system resources and maintain performance.</li>
+</ul>
+<p><strong>Linkly Cloud and MPOS</strong></p>
+<ul>
+<li>
+<p>The <strong>Transaction Status</strong> API provides functionality similar to the <strong>Get Last Transaction</strong> method in OnPrem solutions. It allows the POS to retrieve the status of the most recent transaction, making it an essential tool for error recovery and transaction validation.</p>
+</li>
+<li>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Verifying the outcome of the last transaction after a system issue.</li>
+<li>Resolving customer concerns about transaction completion.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Exponential Backoff Logic</strong></p>
+<ul>
+<li>
+<p>To manage potential server overloads, Linkly recommends implementing <strong>exponential backoff logic</strong> during recovery attempts. This technique reduces strain on infrastructure by gradually increasing the delay between retries when errors persist.</p>
+</li>
+<li>
+<p><strong>Implementation Guidelines</strong>:</p>
+<ul>
+<li>Start with a short delay (e.g., 1000ms ± 500ms).</li>
+<li>Double the delay with slight randomization for subsequent retries (e.g., 640ms, 1620ms, 2890ms).</li>
+<li>Continue retries for up to 3 minutes or a maximum retry count.</li>
+</ul>
+</li>
+<li>
+<p><strong>Important Considerations</strong>:<br>
+- If neither an HTTP 200 nor a 404 response is received during recovery, the transaction outcome cannot be confirmed.<br>
+- Avoid retrying indefinitely to prevent unnecessary delays or system strain.</p>
+</li>
+<li>
+<p><strong>Outcome</strong>:<br>
+- This approach balances system performance with effective error recovery, reducing customer and merchant inconvenience.</p>
+</li>
+</ul>
+<h3 id="common-merchant-use-case-scenarios-and-best-practices">Common Merchant Use Case Scenarios and Best Practices</h3>
+<p><strong>Power Failure Scenario</strong></p>
+<ul>
+<li>
+<p><strong>Situation</strong>:  During a transaction, the cardholder completes the payment, but the POS system shuts down unexpectedly.</p>
+</li>
+<li>
+<p><strong>Expected POS Behavior</strong>:  The POS should record the order as incomplete in its database, ensuring traceability.<br>
+Upon reboot, the merchant should use the <strong>Transaction Status API</strong> to retrieve the status of the last transaction.</p>
+</li>
+<li>
+<p><strong>Steps for Recovery</strong>:  Perform a <strong>Transaction Status API call</strong> to determine if the transaction was approved, declined, or incomplete.<br>
+Take appropriate action: reprocess the payment if necessary or mark the transaction as completed.</p>
+</li>
+<li>
+<p><strong>Outcome</strong>: This prevents double-charging the customer and ensures all transactions are resolved accurately.</p>
+</li>
+</ul>
+<p><strong>Customer Disputes Scenario</strong></p>
+<ul>
+<li>
+<p><strong>Situation</strong>: A cardholder disputes a transaction, claiming they were double-charged or charged erroneously.</p>
+</li>
+<li>
+<p><strong>Expected POS Features</strong>:</p>
+<ul>
+<li>Maintain a detailed transaction database, including approved transactions and declined transactions.</li>
+<li>Provide search functionality for transactions using:</li>
+<li>Masked card details.</li>
+<li>Transaction date and time.</li>
+<li>Amount or reference number.</li>
+</ul>
+</li>
+<li>
+<p><strong>Steps for Resolution</strong>:</p>
+<ul>
+<li>Use the <strong>Transaction Status API</strong> to retrieve transaction details based on the cardholder’s information.</li>
+<li>Verify whether a double charge occurred or if the customer was not charged.</li>
+</ul>
+</li>
+<li>
+<p><strong>Outcome</strong>:</p>
+<ul>
+<li>These features enable merchants to promptly and accurately resolve disputes, fostering trust and maintaining customer satisfaction.</li>
+</ul>
+</li>
+</ul> </div> <footer class="sl-flex astro-7kmham3i"> <div class="meta sl-flex astro-7kmham3i">   </div> <div class="pagination-links print:hidden astro-lhzmyc5a" dir="ltr"> <a href="/posfaq/guides/gettingstarted" rel="prev" class="astro-lhzmyc5a"> <svg aria-hidden="true" class="astro-lhzmyc5a astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg>  <span class="astro-lhzmyc5a"> Previous <br class="astro-lhzmyc5a"> <span class="link-title astro-lhzmyc5a">Getting Started</span> </span> </a> <a href="/posfaq/guides/onprem" rel="next" class="astro-lhzmyc5a"> <svg aria-hidden="true" class="astro-lhzmyc5a astro-uedyp4hs" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg>  <span class="astro-lhzmyc5a"> Next <br class="astro-lhzmyc5a"> <span class="link-title astro-lhzmyc5a">OnPrem TCPIP/ActiveX</span> </span> </a> </div>   </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
